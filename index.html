@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API</title>
+    <title>Random Cooking</title>
+    <link rel="stylesheet" href="./styles/api-assignment.css">
+    <script src="./scripts/jquery-3.7.1.min.js"></script>
+    <script src="./scripts/api-assignment.js" defer></script>
 </head>
 <body>
-    
+    <header class="header">
+        <h1 class="header__page-title">Random Cooking</h1>
+        <div id="search-container" class="search-container">
+            <input type="text" id="recipe-search" placeholder="Search for a recipe">
+            <button class="search-button" id="search-button">Search</button>
+        </div>
+    </header>
+    <main class="main">
+        <div class="initial-page" id="initial-page">
+            <button class="get-recipe-button" id="get-recipe-button">Get a random recipe</button>
+        </div>
+        <div class="recipe-container" id="recipe-container" style="display:none;">
+            <h2 class="recipe-name">Recipe</h2>
+            <div class="recipe-container">
+                <div class="recipe-image">
+                    <img class="" alt="meal-image"></img>
+                </div>
+                <div class="recipe-details">
+                    <h3>Ingredients</h3>
+                    <ul class="ingredients-list"></ul>
+                </div>
+            </div>
+            <button class="toggle-layout-button">Show Instructions</button>
+            <div class="instructions-section" style="display:none;">
+                 <h3>Instructions</h3>
+                 <p class="recipe-area"></p>
+            </div>
+            <button class="next-recipe-button" id="next-recipe-button">Next Recipe</button>
+         </div>
+    </main>
 </body>
 </html>
